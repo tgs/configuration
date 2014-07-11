@@ -7,7 +7,7 @@
     openid_workaround: true
     devstack: true
     disable_edx_services: true
-    edx_platform_version: 'master'
+    edx_platform_version: 'zoldak/temp-repo-txt'
     mongo_enable_journal: false
     EDXAPP_NO_PREREQ_INSTALL: 0
     COMMON_MOTD_TEMPLATE: 'devstack_motd.tail.j2'
