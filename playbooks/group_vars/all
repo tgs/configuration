@@ -1,4 +1,10 @@
 ---
+# Set edx-ansible to update from my own source code repository
+#
+
+edx_ansible_source_repo: 'https://github.com/tgs/configuration.git'
+configuration_version: 'badges'
+
 # these pathes are relative to the playbook dir
 # directory for secret settings (keys, etc)
 #
