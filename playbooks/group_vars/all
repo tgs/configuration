@@ -1,4 +1,10 @@
 ---
+
+configuration_version: 'badges'
+edx_ansible_source_repo: '/vagrant/configuration'
+edx_platform_version: 'badges'
+edx_platform_repo: '/vagrant/edx-platform'
+
 # these pathes are relative to the playbook dir
 # directory for secret settings (keys, etc)
 #
