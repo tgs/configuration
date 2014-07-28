@@ -1,0 +1,23 @@
+---
+
+# These should be defined elsewhere...
+
+#COMMON_APP_DIR: "/edx/app"
+#supervisor_user: supervisor
+#supervisor_cfg: /edx/app/supervisor/supervisord.conf
+#supervisor_ctl: /edx/app/supervisor/venvs/supervisor/bin/supervisorctl
+#supervisor_available_dir: /edx/app/supervisor/conf.available.d
+#supervisor_cfg_dir: /edx/app/supervisor/conf.d
+
+
+
+badgekitapi_app_dir: "{{ COMMON_APP_DIR }}/badgekitapi"
+badgekitapi_log_dir: "/edx/var/log/badgekitapi"
+badgekitapi_repo: "https://github.com/mozilla/badgekit-api.git"
+badgekitapi_user: "{{ supervisor_user }}"
+bkapi_env:
+  DB_NAME: "badgekitapi"
+  DB_USER: "badgekitapi"
+  DB_PASSWORD: "ia8isyu82h3ikjnakgsdj"
+  DB_HOST: localhost
+  PORT: 5001
