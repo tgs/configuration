@@ -18,6 +18,7 @@
     - edx_ansible
     - edxlocal
     - mongo
+    - supervisor
     - badgekitapi
     - edxapp
     - oraclejdk
