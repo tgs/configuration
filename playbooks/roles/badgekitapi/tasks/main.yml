@@ -38,7 +38,7 @@
 
 - name: write supervisord config for badgekitapi
   template: >
-    src=templates/badgekitapi.conf.j2
+    src=badgekitapi.conf.j2
     dest="{{ supervisor_available_dir }}/badgekitapi.conf"
   sudo_user: "{{ supervisor_user }}"
 
