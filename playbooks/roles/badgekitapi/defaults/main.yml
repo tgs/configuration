@@ -14,7 +14,7 @@
 badgekitapi_app_dir: "{{ COMMON_APP_DIR }}/badgekitapi"
 badgekitapi_log_dir: "/edx/var/log/badgekitapi"
 badgekitapi_repo: "https://github.com/mozilla/badgekit-api.git"
-badgekitapi_user: "{{ supervisor_user }}"
+badgekitapi_user: "{{ supervisor_service_user }}"
 bkapi_env:
   DB_NAME: "badgekitapi"
   DB_USER: "badgekitapi"
