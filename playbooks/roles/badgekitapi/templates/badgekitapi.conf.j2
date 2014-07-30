@@ -12,7 +12,7 @@ stderr_logfile={{ badgekitapi_log_dir }}/web-1.error.log
 user=www-data
 directory={{ badgekitapi_app_dir }}
 environment=
-{%- for name,value in bkapi_env.items() -%}
+{%- for name,value in badgekitapi_env.items() -%}
 {%- if value -%}{{name}}="{{value}}"{%- if not loop.last -%},{%- endif -%}{%- endif -%}
 {%- endfor %}
 

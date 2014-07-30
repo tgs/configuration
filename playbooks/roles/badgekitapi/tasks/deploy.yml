@@ -14,17 +14,17 @@
 - name: install nodejs dependencies
   npm: path={{ badgekitapi_app_dir }}
 
-- name: add mysql db {{ bkapi_env.DB_NAME }}
-  mysql_db: db={{ bkapi_env.DB_NAME }} state=present encoding=utf8
+- name: add mysql db {{ badgekitapi_env.DB_NAME }}
+  mysql_db: db={{ badgekitapi_env.DB_NAME }} state=present encoding=utf8
 
-- name: create mysql user {{ bkapi_env.DB_USER }}
+- name: create mysql user {{ badgekitapi_env.DB_USER }}
   mysql_user: >
-    name={{ bkapi_env.DB_USER }}
-    password={{ bkapi_env.DB_PASSWORD }}
-    priv='{{ bkapi_env.DB_NAME }}.*:ALL'
+    name={{ badgekitapi_env.DB_USER }}
+    password={{ badgekitapi_env.DB_PASSWORD }}
+    priv='{{ badgekitapi_env.DB_NAME }}.*:ALL'
 
 - name: run badgekitapi db migrations
-  environment: bkapi_env
+  environment: badgekitapi_env
   shell: >
     ./bin/db-migrate up
       chdir={{ badgekitapi_app_dir }}
